@@ -3,9 +3,10 @@ const app = express();
 
 app.get('/', (req, res) => {
     res.send({ 
-        'wassup boys': 'this is iightBet'
+        yo: 'this is iightBet'
     });
 });
 
 const PORT = process.env.PORT || 3000;
+
 app.listen(3000);
