@@ -50,7 +50,9 @@ const Landing = () => {
 					<ul>
 						{nflSchedule.events &&
 							nflSchedule.events.map((item, index) => (
-								<li key={index}>{item.strEventAlternate}</li>
+								<li key={index}>
+									{item.strEventAlternate} on {item.dateEvent} at {item.strTime}
+								</li>
 							))}
 					</ul>
 				</div>
